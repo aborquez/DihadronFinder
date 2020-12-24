@@ -32,7 +32,7 @@ mkdir -p ${OUTDIR} ${TMPDIR} # just in case
 for file in ${GSTDIR}/*; do
     # update rn value
     RN=${file##*_}
-    RN=${file%.root}
+    RN=${RN%.root}
     
     # setting jobname
     jobname="DHF_${TARNAME}_${RN}"
